@@ -1,5 +1,11 @@
-const config = {
-  plugins: ["@tailwindcss/postcss"],
-};
+// frontend/postcss.config.js
 
-export default config;
+/** @type {import('postcss').ProcessOptions} */
+module.exports = {
+  plugins: {
+    // Use the official Tailwind CSS plugin
+    tailwindcss: {},
+    // Add vendor prefixes automatically
+    autoprefixer: {}
+  }
+};
